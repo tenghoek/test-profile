@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working with Tables</title>
+
+    <!-- add to head section -->
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Foundations in Web Development using HTML and CSS</h1>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Topics</th>
+        <th>Remarks</th>
+      </tr>
+      <tr>
+        <td rowspan="7">1</td>
+        <td>9am - 10.45am</td>
+        <td>Introduction to Frontend Development</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>10.45am - 11am</td>
+        <td colspan="2">Break</td>
+      </tr>
+      <tr>
+        <td>11am - 1pm</td>
+        <td>Basics of HTML</td>
+        <td>
+          Exercise 1.1<br />
+          Exercise 1.2<br />
+          Exercise 1.3
+        </td>
+      </tr>
+      <tr>
+        <td>1pm - 2pm</td>
+        <td colspan="2">Lunch</td>
+      </tr>
+      <tr>
+        <td>2pm - 3.30pm</td>
+        <td>Basics of HTML</td>
+        <td>
+          Exercise 1.4<br />
+          Publishing Your Page
+        </td>
+      </tr>
+      <tr>
+        <td>3.30pm - 3.45pm</td>
+        <td colspan="2">Break</td>
+      </tr>
+      <tr>
+        <td>3.45pm - 5.30pm</td>
+        <td>Basics of HTML</td>
+        <td>
+          Exercise 1.5<br />
+          Exercise 1.6
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
